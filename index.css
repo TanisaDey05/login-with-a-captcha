@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: #230202;
+}
+.login-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 450px;
+    background: #eb8406;
+    padding: 20px 30px;
+    box-shadow: 0px 5px 10px rgba(226, 185, 109, 0.98);
+}
+.login-form .form-title {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Lucida Sans', sans-serif;
+}
+.login-form .form-input label {
+    display: block;
+    font-size: 15px;
+    color: rgb(43, 19, 1);
+    margin-bottom: 5px;
+}
+.login-form .form-input input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid hsl(320, 92%, 28%);
+    font-size: 15px;
+}
+.captcha-box {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+#captchaCanvas {
+    border: 1px solid #650202;
+    background: #fff;
+    border-radius: 5px;
+}
+.captcha-refresh {
+    margin-left: 10px;
+    padding: 10px;
+    border: none;
+    background: #580216;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.captcha-refresh:hover {
+    background: #7a1727;
+}
+#login-btn {
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    background: hsla(343, 90%, 57%, 0.808);
+    color: #0d0101;
+    cursor: pointer;
+}
+#login-btn:hover {
+    background: #d1274e;
+}
+#captchaMessage {
+    margin-top: 10px;
+    font-size: 14px;
+}

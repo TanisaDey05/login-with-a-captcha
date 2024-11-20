@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Member Login </title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="login-form">
+        <div class="form-title">Login</div>
+        <div class="form-input">
+            <label for="username">USERNAME</label>
+            <input type="text" id="username" placeholder="Enter username">
+        </div>
+        <div class="form-input">
+            <label for="password">PASSWORD</label>
+            <input type="password" id="password" placeholder="Enter password">
+        </div>
+        <div class="captcha">
+            <label for="captchaInput">CAPTCHA</label>
+            <div class="captcha-box">
+                <canvas id="captchaCanvas" width="200" height="80"></canvas>
+                <button id="refreshCaptcha" class="captcha-refresh" title="Refresh CAPTCHA">↻</button>
+            </div>
+            <input type="text" id="captchaInput" placeholder="Enter CAPTCHA">
+        </div>
+        <button id="login-btn">Login</button>
+        <p id="captchaMessage"></p>
+    </div>
+    <script src="captcha.js"></script>
+</body>
+</html>
